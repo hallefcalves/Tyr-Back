@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 require('./controllers/containers')(app);
 require('./controllers/images')(app);
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(3000, () => {
     console.log('Server started');
 });
 
